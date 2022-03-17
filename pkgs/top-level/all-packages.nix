@@ -13788,6 +13788,8 @@ with pkgs;
 
   inherit (ocamlPackages) reason;
 
+  renode = callPackage ../misc/renode { };
+
   renpy = callPackage ../development/interpreters/renpy { };
 
   pixie = callPackage ../development/interpreters/pixie { };
